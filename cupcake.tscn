@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://d07tieerju5se"]
+
+[ext_resource type="Script" uid="uid://dnsdry11nmmb7" path="res://cupcake.gd" id="1_ukloy"]
+
+[node name="Cupcake" type="Panel" unique_id=1686484846]
+offset_right = 120.0
+offset_bottom = 80.0
+script = ExtResource("1_ukloy")
+
+[node name="Label" type="Label" parent="." unique_id=1385015512]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0

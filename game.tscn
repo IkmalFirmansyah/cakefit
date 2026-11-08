@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://ciols4c6eiduv"]
 
+[ext_resource type="Script" uid="uid://c0bhjt6ejgj7h" path="res://game.gd" id="1_80nbo"]
+
 [node name="Game" type="Control" unique_id=2050957132]
 layout_mode = 3
 anchors_preset = 15
@@ -7,9 +9,67 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_80nbo")
 
-[node name="Label" type="Label" parent="." unique_id=402898023]
+[node name="InfoLabel" type="Label" parent="." unique_id=1145424114]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "Ini Layar Game"
+offset_left = 40.0
+offset_top = 20.0
+offset_right = 1240.0
+offset_bottom = 120.0
+text = "InfoLabel"
+
+[node name="TombolReset" type="Button" parent="." unique_id=1076307069]
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 20.0
+offset_right = 1240.0
+offset_bottom = 70.0
+text = "Reset"
+
+[node name="TombolMenu" type="Button" parent="." unique_id=794481137]
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 80.0
+offset_right = 1240.0
+offset_bottom = 130.0
+text = "Menu"
+
+[node name="PopupMenang" type="CanvasLayer" parent="." unique_id=2114472844]
+layer = 10
+
+[node name="Gelap" type="ColorRect" parent="PopupMenang" unique_id=1084092978]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.54901963)
+
+[node name="PanelPopup" type="ColorRect" parent="PopupMenang" unique_id=661220585]
+offset_left = 390.0
+offset_top = 210.0
+offset_right = 890.0
+offset_bottom = 510.0
+color = Color(1, 0.972549, 0.9372549, 1)
+
+[node name="SelamatLabel" type="Label" parent="PopupMenang/PanelPopup" unique_id=1691099384]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 50.0
+offset_right = 480.0
+offset_bottom = 170.0
+theme_override_colors/font_color = Color(0.33333334, 0.23137255, 0.19607843, 1)
+theme_override_font_sizes/font_size = 32
+text = "Selamat!
+Ke Level Selanjutnya"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LanjutButton" type="Button" parent="PopupMenang/PanelPopup" unique_id=20281626]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 210.0
+offset_right = 350.0
+offset_bottom = 270.0
+text = "Lanjut"
