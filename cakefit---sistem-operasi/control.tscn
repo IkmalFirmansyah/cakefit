@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://bwhmowpn6bhr3"]
+
+[ext_resource type="Texture2D" uid="uid://8uyji60sgs3e" path="res://assets/images/Background.png" id="1_0fbet"]
+[ext_resource type="Texture2D" uid="uid://nt0gt5t5w6mc" path="res://assets/images/Tombol Play.png" id="2_62e2m"]
+[ext_resource type="Texture2D" uid="uid://51i0854pf525" path="res://assets/images/Tombol Setting .png" id="3_qtu10"]
+[ext_resource type="Texture2D" uid="uid://dxougn3owwo3v" path="res://assets/images/Tombol About.png" id="4_ee4bf"]
+[ext_resource type="Texture2D" uid="uid://y3uw3m0uih2j" path="res://assets/images/Logo.png" id="5_kbped"]
+
+[node name="Control" type="Control" unique_id=832052526]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1050938131]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_0fbet")
+expand_mode = 1
+
+[node name="Play" type="TextureButton" parent="." unique_id=220943366]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.514
+offset_left = -150.0
+offset_top = 22.0
+offset_right = 150.0
+offset_bottom = 82.92801
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_62e2m")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Setting" type="TextureButton" parent="." unique_id=2140251623]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -204.0
+offset_right = 150.0
+offset_bottom = -134.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("3_qtu10")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="About" type="TextureButton" parent="." unique_id=873647190]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -108.0
+offset_right = 150.0
+offset_bottom = -38.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("4_ee4bf")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Logo" type="TextureRect" parent="." unique_id=22361844]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_top = 81.0
+offset_right = 200.0
+offset_bottom = 231.0
+grow_horizontal = 2
+texture = ExtResource("5_kbped")
+expand_mode = 1
