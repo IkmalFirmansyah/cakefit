@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bwhmowpn6bhr3"]
+[gd_scene format=3 uid="uid://brorl153vf7bv"]
 
 [ext_resource type="Texture2D" uid="uid://8uyji60sgs3e" path="res://assets/images/Background.png" id="1_0fbet"]
 [ext_resource type="Texture2D" uid="uid://nt0gt5t5w6mc" path="res://assets/images/Tombol Play.png" id="2_62e2m"]
@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dxougn3owwo3v" path="res://assets/images/Tombol About.png" id="4_ee4bf"]
 [ext_resource type="Texture2D" uid="uid://y3uw3m0uih2j" path="res://assets/images/Logo.png" id="5_kbped"]
 
-[node name="Control" type="Control" unique_id=832052526]
+[node name="Tampilan Awal" type="Control" unique_id=832052526]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
