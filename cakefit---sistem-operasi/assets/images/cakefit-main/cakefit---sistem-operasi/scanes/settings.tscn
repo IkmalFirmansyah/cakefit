@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://cjjaujahx33nd"]
+
+[ext_resource type="Texture2D" uid="uid://krjl4p811rat" path="res://assets/images/Background Setting .png" id="1_kiwxg"]
+[ext_resource type="Script" uid="uid://nehxyjvgdfpe" path="res://scanes/settings.gd" id="1_vkn1a"]
+[ext_resource type="Texture2D" uid="uid://brcabob7sbp1w" path="res://assets/images/Panel Utama.png" id="2_uw3hw"]
+[ext_resource type="Texture2D" uid="uid://y3uw3m0uih2j" path="res://assets/images/Logo.png" id="3_n27ii"]
+[ext_resource type="Texture2D" uid="uid://0csmece033uv" path="res://assets/images/Group 11.png" id="4_uw3hw"]
+[ext_resource type="Texture2D" uid="uid://do2glhuch133w" path="res://assets/images/Tombol Save.png" id="5_dc65h"]
+[ext_resource type="Texture2D" uid="uid://bb8jbrbw0pb57" path="res://assets/images/Setting Revisi.png" id="6_uw3hw"]
+[ext_resource type="Texture2D" uid="uid://b3vm17xvonw4c" path="res://assets/images/Slider.png" id="7_n27ii"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ql73s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n27ii"]
+
+[node name="Settings" type="Control" unique_id=1493451106]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vkn1a")
+
+[node name="background" type="TextureRect" parent="." unique_id=297699323]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_kiwxg")
+expand_mode = 1
+
+[node name="Panel Settings" type="TextureRect" parent="." unique_id=823373945]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -351.25
+offset_top = -188.5
+offset_right = 351.25
+offset_bottom = 188.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_uw3hw")
+expand_mode = 1
+
+[node name="Logo" type="TextureRect" parent="." unique_id=1435346153]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_top = 103.0
+offset_right = 150.0
+offset_bottom = 203.0
+grow_horizontal = 2
+texture = ExtResource("3_n27ii")
+expand_mode = 1
+
+[node name="Volume Settings" type="TextureRect" parent="." unique_id=1722040227]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.82153
+offset_top = -36.625
+offset_right = 256.82153
+offset_bottom = 36.625
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_uw3hw")
+expand_mode = 1
+
+[node name="ButtonSave" type="TextureButton" parent="." unique_id=720793810]
+custom_minimum_size = Vector2(300, 70)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -150.0
+offset_top = -184.0
+offset_right = 150.0
+offset_bottom = -114.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("5_dc65h")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Settings" type="TextureRect" parent="." unique_id=946279161]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 206.0
+offset_right = 647.75
+offset_bottom = 252.0
+texture = ExtResource("6_uw3hw")
+expand_mode = 1
+
+[node name="VolumeSlider" type="HSlider" parent="." unique_id=407798354]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -204.0
+offset_top = -22.0
+offset_right = 259.0
+offset_bottom = 51.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_icons/grabber = ExtResource("7_n27ii")
+theme_override_icons/grabber_highlight = ExtResource("7_n27ii")
+theme_override_styles/slider = SubResource("StyleBoxEmpty_ql73s")
+theme_override_styles/grabber_area = SubResource("StyleBoxFlat_n27ii")

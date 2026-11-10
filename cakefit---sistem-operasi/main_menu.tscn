@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://deco23oppnhs"]
+
+[ext_resource type="Script" uid="uid://dvhtm8h0psbr8" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://cbxljivchkdi8" path="res://Revisi Tampilan Awal .png" id="2_7vrkn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ql73s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fu7sn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vrkn"]
+
+[node name="MainMenu" type="Control" unique_id=1912152663]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=59448733]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.972549, 0.9372549, 1)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=144329013]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7vrkn")
+expand_mode = 1
+
+[node name="SettingsButton" type="Button" parent="." unique_id=189379298]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 449.0
+offset_right = 798.0
+offset_bottom = 519.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ql73s")
+
+[node name="PlayButton" type="Button" parent="." unique_id=808801615]
+layout_mode = 0
+offset_left = 482.0
+offset_top = 361.0
+offset_right = 792.0
+offset_bottom = 431.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fu7sn")
+text = "PLAY"
+
+[node name="AboutButton" type="Button" parent="." unique_id=161057875]
+layout_mode = 0
+offset_left = 487.0
+offset_top = 543.0
+offset_right = 797.0
+offset_bottom = 613.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7vrkn")
+text = "ABOUT"
+
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]

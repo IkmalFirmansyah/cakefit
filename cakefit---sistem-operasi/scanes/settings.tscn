@@ -1,7 +1,7 @@
-[gd_scene format=3 uid="uid://cjjaujahx33nd"]
+[gd_scene format=3 uid="uid://irkxpmcf3r2w"]
 
 [ext_resource type="Texture2D" uid="uid://krjl4p811rat" path="res://assets/images/Background Setting .png" id="1_kiwxg"]
-[ext_resource type="Script" uid="uid://nehxyjvgdfpe" path="res://scanes/settings.gd" id="1_vkn1a"]
+[ext_resource type="Script" path="res://scanes/settings.gd" id="1_vkn1a"]
 [ext_resource type="Texture2D" uid="uid://brcabob7sbp1w" path="res://assets/images/Panel Utama.png" id="2_uw3hw"]
 [ext_resource type="Texture2D" uid="uid://y3uw3m0uih2j" path="res://assets/images/Logo.png" id="3_n27ii"]
 [ext_resource type="Texture2D" uid="uid://0csmece033uv" path="res://assets/images/Group 11.png" id="4_uw3hw"]
@@ -54,9 +54,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -150.0
-offset_top = 103.0
+offset_top = 137.0
 offset_right = 150.0
-offset_bottom = 203.0
+offset_bottom = 237.0
 grow_horizontal = 2
 texture = ExtResource("3_n27ii")
 expand_mode = 1
@@ -86,9 +86,9 @@ anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -150.0
-offset_top = -184.0
+offset_top = -222.0
 offset_right = 150.0
-offset_bottom = -114.0
+offset_bottom = -152.0
 grow_horizontal = 2
 grow_vertical = 0
 texture_normal = ExtResource("5_dc65h")
@@ -96,11 +96,15 @@ ignore_texture_size = true
 stretch_mode = 0
 
 [node name="Settings" type="TextureRect" parent="." unique_id=946279161]
-layout_mode = 0
-offset_left = 504.0
-offset_top = 206.0
-offset_right = 647.75
-offset_bottom = 252.0
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -71.875
+offset_top = 249.0
+offset_right = 71.875
+offset_bottom = 295.0
+grow_horizontal = 2
 texture = ExtResource("6_uw3hw")
 expand_mode = 1
 

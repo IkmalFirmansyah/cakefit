@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://deco23oppnhs"]
+
+[ext_resource type="Script" uid="uid://dvhtm8h0psbr8" path="res://main_menu.gd" id="1_06t4h"]
+
+[node name="MainMenu" type="Control" unique_id=1912152663]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=59448733]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 0.972549, 0.9372549, 1)
+
+[node name="Label" type="Label" parent="." unique_id=197872938]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 150.0
+offset_right = 940.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0.33333334, 0.23137255, 0.19607843, 1)
+theme_override_font_sizes/font_size = 64
+text = "CakeFit"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="." unique_id=808801615]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 400.0
+offset_right = 795.0
+offset_bottom = 470.0
+text = "PLAY"
+
+[node name="AboutButton" type="Button" parent="." unique_id=161057875]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 483.0
+offset_right = 795.0
+offset_bottom = 553.0
+text = "ABOUT"
+
+[node name="ExitButton" type="Button" parent="." unique_id=491898160]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 566.0
+offset_right = 795.0
+offset_bottom = 636.0
+text = "EXIT"
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
