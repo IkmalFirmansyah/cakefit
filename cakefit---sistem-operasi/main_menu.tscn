@@ -39,7 +39,6 @@ texture = ExtResource("2_7vrkn")
 expand_mode = 1
 
 [node name="SettingsButton" type="Button" parent="." unique_id=189379298]
-visible = false
 layout_mode = 0
 offset_left = 484.0
 offset_top = 449.0
@@ -48,7 +47,6 @@ offset_bottom = 519.0
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ql73s")
 
 [node name="PlayButton" type="Button" parent="." unique_id=808801615]
-visible = false
 layout_mode = 0
 offset_left = 482.0
 offset_top = 361.0
