@@ -1,14 +1,16 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1794310227
-control.tscn::PackedScene::3609585559958196911::1794292980::0::1::::<><><>0<>0<><>::uid://8uyji60sgs3e::::res://assets/images/Background.png<>uid://nt0gt5t5w6mc::::res://assets/images/Tombol Play.png<>uid://51i0854pf525::::res://assets/images/Tombol Setting .png<>uid://dxougn3owwo3v::::res://assets/images/Tombol About.png<>uid://y3uw3m0uih2j::::res://assets/images/Logo.png
+::res://::1794538603
+control.tscn::PackedScene::3945780672354002386::1794285277::0::1::::<><><>0<>0<><>::uid://8uyji60sgs3e::::res://assets/images/Background.png<>uid://nt0gt5t5w6mc::::res://assets/images/Tombol Play.png<>uid://51i0854pf525::::res://assets/images/Tombol Setting .png<>uid://dxougn3owwo3v::::res://assets/images/Tombol About.png<>uid://y3uw3m0uih2j::::res://assets/images/Logo.png
 cupcake.gd::GDScript::8109089629345980002::1794309918::0::1::::<>Panel<><>0<>0<><>::
 cupcake.tscn::PackedScene::8981211356431696432::1794309918::0::1::::<><><>0<>0<><>::uid://dnsdry11nmmb7::::res://cupcake.gd
 game.gd::GDScript::6530068973212186475::1794309918::0::1::::Game<>Control<><>0<>0<><>::
 game.tscn::PackedScene::5363954963938942377::1794309918::0::1::::<><><>0<>0<><>::uid://c0bhjt6ejgj7h::::res://game.gd
 icon.svg::CompressedTexture2D::4406213157261693967::1794309918::1794310229::1::::<><><>0<>0<>4eefca84170733cc799e8e55c13926cc<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main_menu.gd::GDScript::8648855209386648775::1794309918::0::1::::<>Control<><>0<>0<><>::
-main_menu.tscn::PackedScene::218971939072261084::1794309918::0::1::::<><><>0<>0<><>::uid://dvhtm8h0psbr8::::res://main_menu.gd
+main_menu.gd::GDScript::8648855209386648775::1794312206::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::218971939072261084::1794312309::0::1::::<><><>0<>0<><>::uid://dvhtm8h0psbr8::::res://main_menu.gd<>uid://cbxljivchkdi8::::res://Revisi Tampilan Awal .png
 Revisi Tampilan Awal .png::CompressedTexture2D::4891195311161500413::1794309918::1794310230::1::::<><><>0<>0<>7b50dc36ba6bc828670df026407ba703<>res://.godot/imported/Revisi Tampilan Awal .png-167377af87a269afde99188f5582b41a.ctex::
+settings.gd::GDScript::921179845945767278::1794312075::0::1::::settings<>Control<><>0<>0<><>::
+settings.tscn::PackedScene::5423156548853197789::1794312305::0::1::::<><><>0<>0<><>::uid://krjl4p811rat::::res://assets/images/Background Setting .png<>uid://nehxyjvgdfpe::::res://scanes/settings.gd<>uid://brcabob7sbp1w::::res://assets/images/Panel Utama.png<>uid://y3uw3m0uih2j::::res://assets/images/Logo.png<>uid://0csmece033uv::::res://assets/images/Group 11.png<>uid://do2glhuch133w::::res://assets/images/Tombol Save.png<>uid://bb8jbrbw0pb57::::res://assets/images/Setting Revisi.png<>uid://b3vm17xvonw4c::::res://assets/images/Slider.png
 Tampilan Awal.png::CompressedTexture2D::6917393371200723910::1794309918::1794310230::1::::<><><>0<>0<>a240b143f472232c9f5c196a0fdd6530<>res://.godot/imported/Tampilan Awal.png-31a6946a2492dce0d7512d7815d545e5.ctex::
 Tampilan In Game.png::CompressedTexture2D::8760941705986715262::1794309918::1794310230::1::::<><><>0<>0<>c66b8a85fd0fd121fb98f85b22598638<>res://.godot/imported/Tampilan In Game.png-2692e7d833f652190d75b8b1add5fa86.ctex::
 Tampilan Settings.png::CompressedTexture2D::6637092834221813864::1794309918::1794310230::1::::<><><>0<>0<>67428af45bc5312d50b477aca0f6749c<>res://.godot/imported/Tampilan Settings.png-8d093434fe1ca8e74cb8ce8d2d613e64.ctex::
@@ -30,7 +32,5 @@ Tombol About.png::CompressedTexture2D::8803732524654096213::1794226144::17942267
 Tombol Play.png::CompressedTexture2D::953207829396196998::1794226132::1794226777::1::::<><><>0<>0<>ee8f7fc9c0cc04825a553e7f0a00cebe<>res://.godot/imported/Tombol Play.png-c62f68b29b526e6639773124e6cc523f.ctex::
 Tombol Save.png::CompressedTexture2D::8198028405721742910::1794284376::1794284876::1::::<><><>0<>0<>6603550f4ff339b335a714ad1491adae<>res://.godot/imported/Tombol Save.png-e0944ca5edb12818d2aeb63059152523.ctex::
 Tombol Setting .png::CompressedTexture2D::2159871292488871524::1794226137::1794226777::1::::<><><>0<>0<>21810d0dc16de0f5424d7edb2bc37ec3<>res://.godot/imported/Tombol Setting .png-f684f72bec65f1646e32e38ac0a7cd53.ctex::
-::res://scanes/::1794292940
-control.tscn::PackedScene::3945780672354002386::1794285277::0::1::::<><><>0<>0<><>::
-settings.gd::GDScript::921179845945767278::1794292721::0::1::::<>Control<><>0<>0<><>::
-settings.tscn::PackedScene::5423156548853197789::1794292940::0::1::::<><><>0<>0<><>::uid://krjl4p811rat::::res://assets/images/Background Setting .png<>uid://nehxyjvgdfpe::::res://scanes/settings.gd<>uid://brcabob7sbp1w::::res://assets/images/Panel Utama.png<>uid://y3uw3m0uih2j::::res://assets/images/Logo.png<>uid://0csmece033uv::::res://assets/images/Group 11.png<>uid://do2glhuch133w::::res://assets/images/Tombol Save.png<>uid://bb8jbrbw0pb57::::res://assets/images/Setting Revisi.png<>uid://b3vm17xvonw4c::::res://assets/images/Slider.png
+::res://scanes/::1794312436
+settings.tscn::PackedScene::597254220597331296::1794312436::0::1::::<><><>0<>0<><>::uid://krjl4p811rat::::res://assets/images/Background Setting .png<>res://scanes/settings.gd<>uid://brcabob7sbp1w::::res://assets/images/Panel Utama.png<>uid://y3uw3m0uih2j::::res://assets/images/Logo.png<>uid://0csmece033uv::::res://assets/images/Group 11.png<>uid://do2glhuch133w::::res://assets/images/Tombol Save.png<>uid://bb8jbrbw0pb57::::res://assets/images/Setting Revisi.png<>uid://b3vm17xvonw4c::::res://assets/images/Slider.png
