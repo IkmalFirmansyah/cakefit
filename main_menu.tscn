@@ -1,6 +1,41 @@
 [gd_scene format=3 uid="uid://deco23oppnhs"]
 
 [ext_resource type="Script" uid="uid://dvhtm8h0psbr8" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Texture2D" uid="uid://krjl4p811rat" path="res://assets/images/Background Setting .png" id="2_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://y3uw3m0uih2j" path="res://assets/images/Logo.png" id="3_qe12f"]
+[ext_resource type="Texture2D" uid="uid://51i0854pf525" path="res://assets/images/Tombol Setting .png" id="4_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://nt0gt5t5w6mc" path="res://assets/images/Tombol Play.png" id="5_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://dxougn3owwo3v" path="res://assets/images/Tombol About.png" id="6_0o4t1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5awyh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_glbon"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jix8l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qe12f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nlkkf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g8g3n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8u0te"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0k4wn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0o4t1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dy7ct"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5v2v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oiatc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w44g7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iotk1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cm266"]
 
 [node name="MainMenu" type="Control" unique_id=1912152663]
 layout_mode = 3
@@ -21,39 +56,108 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 0.972549, 0.9372549, 1)
 
-[node name="Label" type="Label" parent="." unique_id=197872938]
+[node name="Background" type="TextureRect" parent="." unique_id=144329013]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nlkkf")
+expand_mode = 1
+
+[node name="CakefitLogo" type="TextureRect" parent="." unique_id=695533231]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 462.5
+offset_top = 80.0
+offset_right = -460.5
+offset_bottom = -511.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_qe12f")
+expand_mode = 1
+
+[node name="SettingsButton" type="Button" parent="." unique_id=189379298]
 layout_mode = 0
-offset_left = 340.0
-offset_top = 150.0
-offset_right = 940.0
-offset_bottom = 250.0
-theme_override_colors/font_color = Color(0.33333334, 0.23137255, 0.19607843, 1)
-theme_override_font_sizes/font_size = 64
-text = "CakeFit"
-horizontal_alignment = 1
+offset_left = 475.0
+offset_top = 450.0
+offset_right = 789.0
+offset_bottom = 520.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5awyh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_glbon")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jix8l")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_qe12f")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nlkkf")
+
+[node name="TextureRect" type="TextureRect" parent="SettingsButton" unique_id=1200318429]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_right = 13.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_8qtwp")
+expand_mode = 1
 
 [node name="PlayButton" type="Button" parent="." unique_id=808801615]
 layout_mode = 0
-offset_left = 485.0
-offset_top = 400.0
-offset_right = 795.0
-offset_bottom = 470.0
-text = "PLAY"
+offset_left = 475.0
+offset_top = 350.0
+offset_right = 785.0
+offset_bottom = 420.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_g8g3n")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_8u0te")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0k4wn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_0o4t1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dy7ct")
+
+[node name="TextureRect" type="TextureRect" parent="PlayButton" unique_id=1505295575]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 12.0
+offset_right = 17.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_dy7ct")
+expand_mode = 1
 
 [node name="AboutButton" type="Button" parent="." unique_id=161057875]
 layout_mode = 0
-offset_left = 485.0
-offset_top = 483.0
-offset_right = 795.0
-offset_bottom = 553.0
+offset_left = 475.0
+offset_top = 537.0
+offset_right = 797.0
+offset_bottom = 613.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j5v2v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_oiatc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_w44g7")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_iotk1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_cm266")
 text = "ABOUT"
 
-[node name="ExitButton" type="Button" parent="." unique_id=491898160]
-layout_mode = 0
-offset_left = 485.0
-offset_top = 566.0
-offset_right = 795.0
-offset_bottom = 636.0
-text = "EXIT"
+[node name="TextureRect" type="TextureRect" parent="AboutButton" unique_id=302263301]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 1.0
+offset_right = 5.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_0o4t1")
+expand_mode = 1
 
+[connection signal="pressed" from="SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="AboutButton" to="." method="_on_about_button_pressed"]
