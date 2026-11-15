@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://do2glhuch133w"
-path="res://.godot/imported/Tombol Save.png-e0944ca5edb12818d2aeb63059152523.ctex"
+path="res://.godot/imported/Tombol Save.png-e264cc09bc787a1353a4b6e3db0d6c6c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Tombol Save.png"
-dest_files=["res://.godot/imported/Tombol Save.png-e0944ca5edb12818d2aeb63059152523.ctex"]
+source_file="res://Tombol Save.png"
+dest_files=["res://.godot/imported/Tombol Save.png-e264cc09bc787a1353a4b6e3db0d6c6c.ctex"]
 
 [params]
 

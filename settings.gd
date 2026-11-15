@@ -54,3 +54,7 @@ func _on_save_pressed():
 		print("Settings berhasil disimpan!")
 	else:
 		print("Gagal menyimpan settings!")
+
+
+func _on_button_save_pressed() -> void:
+	get_tree().change_scene_to_file("res://main_menu.tscn")

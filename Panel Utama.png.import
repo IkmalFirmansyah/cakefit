@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brcabob7sbp1w"
-path="res://.godot/imported/Panel Utama.png-a198eb9c65e3013fba69ad73492cf013.ctex"
+path="res://.godot/imported/Panel Utama.png-eea53e09d384c0bd5cf4ae4ba51d79e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Panel Utama.png"
-dest_files=["res://.godot/imported/Panel Utama.png-a198eb9c65e3013fba69ad73492cf013.ctex"]
+source_file="res://Panel Utama.png"
+dest_files=["res://.godot/imported/Panel Utama.png-eea53e09d384c0bd5cf4ae4ba51d79e5.ctex"]
 
 [params]
 

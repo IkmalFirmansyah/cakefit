@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://deco23oppnhs"]
 
 [ext_resource type="Script" uid="uid://dvhtm8h0psbr8" path="res://main_menu.gd" id="1_06t4h"]
-[ext_resource type="Texture2D" uid="uid://krjl4p811rat" path="res://assets/images/Background Setting .png" id="2_nlkkf"]
-[ext_resource type="Texture2D" uid="uid://y3uw3m0uih2j" path="res://assets/images/Logo.png" id="3_qe12f"]
-[ext_resource type="Texture2D" uid="uid://51i0854pf525" path="res://assets/images/Tombol Setting .png" id="4_8qtwp"]
-[ext_resource type="Texture2D" uid="uid://nt0gt5t5w6mc" path="res://assets/images/Tombol Play.png" id="5_dy7ct"]
-[ext_resource type="Texture2D" uid="uid://dxougn3owwo3v" path="res://assets/images/Tombol About.png" id="6_0o4t1"]
+[ext_resource type="Texture2D" uid="uid://8uyji60sgs3e" path="res://Background.png" id="2_nlkkf"]
+[ext_resource type="Texture2D" uid="uid://y3uw3m0uih2j" path="res://Logo.png" id="3_qe12f"]
+[ext_resource type="Texture2D" uid="uid://51i0854pf525" path="res://Tombol Setting .png" id="4_8qtwp"]
+[ext_resource type="Texture2D" uid="uid://nt0gt5t5w6mc" path="res://Tombol Play.png" id="5_dy7ct"]
+[ext_resource type="Texture2D" uid="uid://dxougn3owwo3v" path="res://Tombol About.png" id="6_0o4t1"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5awyh"]
 
@@ -71,10 +71,10 @@ layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 462.5
+offset_left = 411.0
 offset_top = 80.0
-offset_right = -460.5
-offset_bottom = -511.0
+offset_right = -380.0
+offset_bottom = -493.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_qe12f")
