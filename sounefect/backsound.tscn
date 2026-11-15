@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dayngdcb1lfc"]
+
+[ext_resource type="AudioStream" uid="uid://bxqgp4f1hs4nt" path="res://sounefect/BackgorundmusicMainmenu.mp3" id="1_wp7s7"]
+
+[node name="Backsound" type="AudioStreamPlayer2D" unique_id=1369211712]
+stream = ExtResource("1_wp7s7")
+autoplay = true
