@@ -45,7 +45,10 @@ func _ready() -> void:
 	$TombolReset.pressed.connect(func(): get_tree().reload_current_scene())
 	$TombolMenu.pressed.connect(func(): get_tree().change_scene_to_file("res://main_menu.tscn"))
 	$PopupMenang.hide()
+	$PopupMenang/Gelap.mouse_filter = Control.MOUSE_FILTER_STOP
 	$PopupMenang/PanelPopup/LanjutButton.pressed.connect(_on_lanjut)
+	$PopupMenang/PanelPopup/MenuButton.pressed.connect(_on_menu)
+	
 	var toples = data()["toples"]
 	var lebar_total = toples.size() * 240 - 40
 	var awal = (1280 - lebar_total) / 2
@@ -60,15 +63,11 @@ func _ready() -> void:
 	mulai_fase()
 
 func tampil_popup() -> void:
-	var label =$PopupMenang/PanelPopup/SelamatLabel
-	var tombol =$PopupMenang/PanelPopup/LanjutButton
-	if level_sekarang + 1 >= LEVELS.size():
-		label.text = "Selamat!\nSemua Level Selesai"
-	else:
-		label.text = "Selamat!\nKeLevel Selanjutnya"
-		tombol.text = "Lanjut"
+	var terakhir = level_sekarang + 1 >= LEVELS.size()
+	$PopupMenang/PanelPopup/Lanjut.visible = not terakhir
+	$PopupMenang/PanelPopup/LanjutButton.visible = not terakhir
 	$PopupMenang.show()
-
+	
 func info(pesan: String) -> void:
 	$InfoLabel.text = "Level %d - %s\nCupcake %d dari %d\n%s" % [level_sekarang + 1, NAMA[algo()], nomor_proses + 1, data()["proses"].size(), pesan]
 
@@ -117,3 +116,7 @@ func _on_lanjut() -> void:
 	else:
 		level_sekarang = 0
 		get_tree().change_scene_to_file("res://main_menu.tscn")
+
+func _on_menu() -> void:
+	level_sekarang = 0
+	get_tree().change_scene_to_file("res://main_menu.tscn")

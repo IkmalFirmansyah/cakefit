@@ -1,6 +1,41 @@
 [gd_scene format=3 uid="uid://ciols4c6eiduv"]
 
 [ext_resource type="Script" uid="uid://c0bhjt6ejgj7h" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="Texture2D" uid="uid://8uyji60sgs3e" path="res://Background.png" id="2_7jktm"]
+[ext_resource type="Texture2D" uid="uid://chfmsw47w81bx" path="res://Assets/Group 31.png" id="3_eow3j"]
+[ext_resource type="Texture2D" uid="uid://bc5lt8nvwle8f" path="res://Assets/Group 45.png" id="3_ryrav"]
+[ext_resource type="Texture2D" uid="uid://cbevi6m6eeorj" path="res://Assets/Group 14.png" id="4_eow3j"]
+[ext_resource type="Texture2D" uid="uid://b7yqsjd6d5vw7" path="res://Assets/Group 9.png" id="5_j5wjh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j5wjh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vef74"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hve3p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mfdv2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iotsf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ryrav"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_eow3j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lc2xo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_215e1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7sc4i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_owr3v"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3tbom"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n0l11"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ohavg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vq5cn"]
 
 [node name="Game" type="Control" unique_id=2050957132]
 layout_mode = 3
@@ -11,13 +46,33 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_80nbo")
 
+[node name="Background" type="TextureRect" parent="." unique_id=2088322896]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_7jktm")
+expand_mode = 1
+
 [node name="InfoLabel" type="Label" parent="." unique_id=1145424114]
 layout_mode = 0
 offset_left = 40.0
 offset_top = 20.0
-offset_right = 1240.0
+offset_right = 380.0
 offset_bottom = 120.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "InfoLabel"
+
+[node name="Reset" type="TextureRect" parent="." unique_id=1218460907]
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 20.0
+offset_right = 1240.0
+offset_bottom = 70.0
+texture = ExtResource("3_eow3j")
+expand_mode = 1
 
 [node name="TombolReset" type="Button" parent="." unique_id=1076307069]
 layout_mode = 0
@@ -25,7 +80,20 @@ offset_left = 1060.0
 offset_top = 20.0
 offset_right = 1240.0
 offset_bottom = 70.0
-text = "Reset"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j5wjh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_vef74")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hve3p")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mfdv2")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_iotsf")
+
+[node name="Menu" type="TextureRect" parent="." unique_id=69614074]
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 80.0
+offset_right = 1240.0
+offset_bottom = 130.0
+texture = ExtResource("5_j5wjh")
+expand_mode = 1
 
 [node name="TombolMenu" type="Button" parent="." unique_id=794481137]
 layout_mode = 0
@@ -33,43 +101,75 @@ offset_left = 1060.0
 offset_top = 80.0
 offset_right = 1240.0
 offset_bottom = 130.0
-text = "Menu"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ryrav")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_eow3j")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_lc2xo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_215e1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7sc4i")
 
 [node name="PopupMenang" type="CanvasLayer" parent="." unique_id=2114472844]
 layer = 10
 
-[node name="Gelap" type="ColorRect" parent="PopupMenang" unique_id=1084092978]
+[node name="Gelap" type="TextureRect" parent="PopupMenang" unique_id=447313738]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.54901963)
+texture = ExtResource("2_7jktm")
+expand_mode = 1
 
-[node name="PanelPopup" type="ColorRect" parent="PopupMenang" unique_id=661220585]
+[node name="PanelPopup" type="TextureRect" parent="PopupMenang" unique_id=1929418599]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_left = 390.0
 offset_top = 210.0
-offset_right = 890.0
-offset_bottom = 510.0
-color = Color(1, 0.972549, 0.9372549, 1)
+offset_right = -390.0
+offset_bottom = -210.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ryrav")
+expand_mode = 1
 
-[node name="SelamatLabel" type="Label" parent="PopupMenang/PanelPopup" unique_id=1691099384]
+[node name="Lanjut" type="TextureRect" parent="PopupMenang/PanelPopup" unique_id=789289276]
 layout_mode = 0
-offset_left = 20.0
-offset_top = 50.0
-offset_right = 480.0
-offset_bottom = 170.0
-theme_override_colors/font_color = Color(0.33333334, 0.23137255, 0.19607843, 1)
-theme_override_font_sizes/font_size = 32
-text = "Selamat!
-Ke Level Selanjutnya"
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_left = 89.0
+offset_top = 232.0
+offset_right = 232.0
+offset_bottom = 269.0
+texture = ExtResource("4_eow3j")
+expand_mode = 1
 
 [node name="LanjutButton" type="Button" parent="PopupMenang/PanelPopup" unique_id=20281626]
 layout_mode = 0
-offset_left = 150.0
-offset_top = 210.0
-offset_right = 350.0
+offset_left = 89.0
+offset_top = 232.0
+offset_right = 232.0
+offset_bottom = 269.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_owr3v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3tbom")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_n0l11")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ohavg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vq5cn")
+
+[node name="Menu" type="TextureRect" parent="PopupMenang/PanelPopup" unique_id=775168371]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 232.0
+offset_right = 408.0
+offset_bottom = 272.0
+texture = ExtResource("5_j5wjh")
+expand_mode = 1
+
+[node name="MenuButton" type="Button" parent="PopupMenang/PanelPopup" unique_id=1675255271]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 233.0
+offset_right = 407.0
 offset_bottom = 270.0
-text = "Lanjut"
+theme_override_styles/normal = SubResource("StyleBoxEmpty_owr3v")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_3tbom")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_n0l11")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_ohavg")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vq5cn")
